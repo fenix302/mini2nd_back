@@ -2,7 +2,9 @@ package com.springboot.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
+@EntityScan(basePackages = {"com.springboot"})
 @SpringBootApplication
 public class GuroCCApplication {
 
