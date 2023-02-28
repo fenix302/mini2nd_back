@@ -1,6 +1,5 @@
 package com.springboot.board.impl;
 
-
 import com.springboot.board.model.FreeBoard;
 
 public interface FreeBoardService {

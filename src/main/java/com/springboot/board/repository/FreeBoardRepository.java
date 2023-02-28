@@ -5,8 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import com.springboot.board.model.FreeBoard;
 
-
-
 @Repository
 public interface FreeBoardRepository extends CrudRepository<FreeBoard, Integer>{
 	
