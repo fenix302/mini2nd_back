@@ -15,22 +15,22 @@ public class FreeBoardController {
 	@Autowired
 	private FreeBoardService freeBoardService;
 
-	@RequestMapping(value = "insertProcess.do")
+	@RequestMapping(value = "/insertProcess.do")
 	public void insertProcess(FreeBoard freeBoard) {
 		freeBoardService.insert(freeBoard);
 	}
 
-	@RequestMapping(value = "updateProcess.do")
+	@RequestMapping(value = "/updateProcess.do")
 	public void updateProcess(FreeBoard freeBoard) {
 		freeBoardService.update(freeBoard);
 	}
 
-	@RequestMapping(value = "deleteProcess.do")
+	@RequestMapping(value = "/deleteProcess.do")
 	public void deleteProcess(FreeBoard freeBoard) {
 		freeBoardService.delete(freeBoard);
 	}
 
-	@RequestMapping(value = "view.do")
+	@RequestMapping(value = "/view.do")
 	public FreeBoard viewFreeBoard() {
 		FreeBoard freeBoard = freeBoardService.select();
 		return freeBoard;

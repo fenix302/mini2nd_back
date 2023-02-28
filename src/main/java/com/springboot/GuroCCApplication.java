@@ -1,8 +1,11 @@
-package com.springboot.user;
+package com.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.ComponentScan;
+
+import com.springboot.board.controller.FreeBoardController;
 
 @EntityScan(basePackages = {"com.springboot"})
 @SpringBootApplication
@@ -15,4 +18,5 @@ public class GuroCCApplication {
 	}
 
 }
+
 
