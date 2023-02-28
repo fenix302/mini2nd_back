@@ -1,8 +1,5 @@
 package com.springboot.board.controller;
 
-
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,5 +35,5 @@ public class FreeBoardController {
 		FreeBoard freeBoard = freeBoardService.select();
 		return freeBoard;
 	}
-	
+
 }

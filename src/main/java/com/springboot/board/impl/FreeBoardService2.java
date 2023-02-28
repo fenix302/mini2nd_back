@@ -1,6 +1,5 @@
 package com.springboot.board.impl;
 
-
 import com.springboot.board.model.FreeBoard;
 
 public interface FreeBoardService {
@@ -12,6 +11,4 @@ public interface FreeBoardService {
 	void delete(FreeBoard freeBoard);
 
 	FreeBoard select();
-	
 }
-
