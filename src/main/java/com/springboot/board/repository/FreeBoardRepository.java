@@ -1,16 +1,23 @@
 package com.springboot.board.repository;
 
-import org.springframework.data.repository.CrudRepository;
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.springboot.board.model.FreeBoard;
 
+
+
 @Repository
-public interface FreeBoardRepository extends CrudRepository<FreeBoard, Integer>{
+public interface FreeBoardRepository extends JpaRepository<FreeBoard, Integer>{
 	
 	FreeBoard findTopByOrderByBnoDesc();
 	
-	FreeBoard save(FreeBoard freeBoard);
+	
+//	List<FreeBoard> findAll();
+	
+	FreeBoard save(List<FreeBoard> currFreeBoard);
 	
 	void delete(FreeBoard freeBoard);
 	
