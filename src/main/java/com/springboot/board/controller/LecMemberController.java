@@ -19,3 +19,4 @@ public class LecMemberController {
 		lecMemberService.insert(lecMember);
 	}
 }
+
