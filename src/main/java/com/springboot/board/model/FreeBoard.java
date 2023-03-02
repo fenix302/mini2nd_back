@@ -40,9 +40,4 @@ public class FreeBoard {
 	@Column(name = "WRITER")
 	private String writer;
 
-	@Column(name = "REGDATE")
-	private Date regdate;
-
-		
-	
 }
