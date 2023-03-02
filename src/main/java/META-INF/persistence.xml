@@ -3,6 +3,7 @@
 	<persistence-unit name="mini2nd_back">
 		<class>com.springboot.board.model.FreeBoard</class>
 		<class>com.springboot.board.model.Lecture</class>
+		<class>com.springboot.board.model.LecMember</class>
 		<class>com.springboot.user.vo.MemberVO</class>
 	</persistence-unit>
 </persistence>
