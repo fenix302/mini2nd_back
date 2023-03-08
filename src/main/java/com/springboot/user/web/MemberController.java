@@ -42,7 +42,7 @@ public class MemberController {
 			
 			// 멤버의 정보가 있다면, 멤버의 이름을 리턴
 			if(resultVO != null) {
-				result = resultVO.getMemberName();
+				result = resultVO.getName();
 			}
 			
 		}catch(Exception e) {

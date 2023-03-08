@@ -21,7 +21,7 @@ public class MemberServiceImpl implements MemberService{
 	 */
 	@Override
 	public MemberVO selectMemberByIdByPw(MemberVO memberVO) throws Exception {
-		MemberVO resultVO = memberDAO.findByMemberIdAndMemberPw(memberVO.getMemberId(), memberVO.getMemberPw());
+		MemberVO resultVO = memberDAO.findByIdAndPw(memberVO.getId(), memberVO.getPw());
 		return resultVO;
 	}
 	

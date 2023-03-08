@@ -12,5 +12,5 @@ import com.springboot.user.vo.MemberVO;
 public interface MemberDAO extends JpaRepository<MemberVO, Integer> {
 	
 	// 회원가입여부를 확인하기 위한 MemberId, MemberPw로 단건 조회
-	MemberVO findByMemberIdAndMemberPw(String memberId, String memberPw);
+	MemberVO findByIdAndPw(String id, String pw);
 }

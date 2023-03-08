@@ -19,64 +19,28 @@ import lombok.Data;
         )
 @Data
 @Entity
-@Table(name="member")
+@Table(name="TB_COM_USER")
 public class MemberVO {
 	  
 	@Id
-	@GeneratedValue(
-			strategy=GenerationType.SEQUENCE,
-			generator="MEMBER_SEQ_GEN"        
-			)
+	@GeneratedValue
+	@Column(name = "USER_CODE")
+	private String userCode;
 	
-	@Column(name = "MEMBER_IDX")
-	private int memberIdx;
+	@Column(name = "ID")
+	private String id;
 	
-	@Column(name = "MEMBER_ID")
-	private String memberId;
+	@Column(name = "PW")
+	private String pw;
 	
-	@Column(name = "MEMBER_PW")
-	private String memberPw;
+	@Column(name = "EMAIL")
+	private String email;
 	
-	@Column(name = "MEMBER_NAME")
-	private String memberName;
+	@Column(name = "NAME")
+	private String name;
 	
-	@Column(name = "MEMBER_EMAIL")
-	private String memberEmail;
+	
+	
+	
 
-	public int getMemberIdx() {
-		return memberIdx;
-	}
-	public void setMemberIdx(int memberIdx) {
-		this.memberIdx = memberIdx;
-	}
-	public String getMemberId() {
-		return memberId;
-	}
-	public void setMemberId(String memberId) {
-		this.memberId = memberId;
-	}
-	public String getMemberPw() {
-		return memberPw;
-	}
-	public void setMemberPw(String memberPw) {
-		this.memberPw = memberPw;
-	}
-	public String getMemberName() {
-		return memberName;
-	}
-	public void setMemberName(String memberName) {
-		this.memberName = memberName;
-	}
-	public String getMemberEmail() {
-		return memberEmail;
-	}
-	public void setMemberEmail(String memberEmail) {
-		this.memberEmail = memberEmail;
-	}
-    
-    @Override
-    public String toString() {
-    	return "MemberVO [memberIdx=" + memberIdx + ", memberId=" + memberId + ", memberPw=" + memberPw
-    			+ ", memberName=" + memberName + ", memberEmail=" + memberEmail + "]";
-    }
 }
